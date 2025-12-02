@@ -25,7 +25,7 @@ PROCESSED_PRODUCTS = set()
 def create_chrome_driver(headless: bool = True):
     options = Options()
     if headless:
-        #options.add_argument("--headless=new")
+        # options.add_argument("--headless=new")
         options.add_argument("--use-gl=swiftshader")
         options.add_argument("--disable-software-rasterizer")
 
@@ -163,15 +163,16 @@ def process_all_products(driver):
         time.sleep(2)
 
         old_count = 0
-        
+
         try:
-         new_product_button  = WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.XPATH ,'//*[@id="main"]/div/div/section/div[1]/ul/li[3]/button')))
-         new_product_button.click()
-         time.sleep(3)
-         write_log({'action':"click_new_product_button" , 'status':'success'})
+            new_product_button = WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((By.XPATH, '//*[@id="main"]/div/div/section/div[1]/ul/li[3]/button')))
+            new_product_button.click()
+            time.sleep(3)
+            write_log({'action': "click_new_product_button", 'status': 'success'})
         except Exception as e:
-            write_log({'action':"click_new_product_button" , 'status':'faild' , "message":str(e)})
-            
+            write_log({'action': "click_new_product_button", 'status': 'faild', "message": str(e)})
+
         while True:
             time.sleep(5)
             products = WebDriverWait(driver, 15).until(EC.presence_of_all_elements_located(
@@ -191,7 +192,7 @@ def process_all_products(driver):
                     time.sleep(0.5)
 
                     image_src = driver.find_element(By.XPATH,
-                        f"//*[@id='article-list']/div/div[{p_index + 1}]/div/div/div[1]/div[1]/img").get_attribute(
+                                                    f"//*[@id='article-list']/div/div[{p_index + 1}]/div/div/div[1]/div[1]/img").get_attribute(
                         "src")
 
                     write_log({"image": image_src})
@@ -221,7 +222,7 @@ def process_all_products(driver):
                     product = products[p_index]
                     driver.execute_script("arguments[0].scrollIntoView({behavior:'smooth', block:'center'});", product)
                     current_tabs = driver.window_handles
-                    
+
                     product.click()
                     time.sleep(1)
                     new_tabs = driver.window_handles
@@ -283,7 +284,7 @@ def send_to_api(data, retries=1):
 
             if response.status_code != 200:
                 write_log({"action": "send_to_api", "status": "fail", "attempt": attempt + 1,
-                    "http_status": response.status_code})
+                           "http_status": response.status_code})
                 return None
 
             try:
@@ -319,8 +320,8 @@ def send_to_api(data, retries=1):
 
 
 def scrape_single_product(driver):
-    data = {"phone": "", "seller_name": "", "product_name": "", "city": "", "state": "","price":"", "description": "",
-        "category": "", "sub_category": "", "link": "", }
+    data = {"phone": "", "seller_name": "", "product_name": "", "city": "", "state": "", "price": "", "description": "",
+            "category": "", "sub_category": "", "link": "", }
 
     time.sleep(2)
     try:
@@ -346,37 +347,36 @@ def scrape_single_product(driver):
             write_log({"action": "get_location", "status": "success", "state": data["state"], "city": data["city"]})
     except Exception as e:
         write_log({"action": "get_location", "status": "skipped", "message": "location not found"})
-        
-        
-    try:
-        data["price"] = WebDriverWait(driver,5).until(EC.presence_of_element_located((By.XPATH , '//*[@id="main"]/div[1]/div/div[2]/section/div/div/div[1]/div[2]/div/div/div/div/div[2]/p[2]'))).text    
-        write_log({"action": "get_price", "status": "success", "price": data["price"]})
-    except Exception as e:
-         write_log({"action": "get_price", "status": "faild", "message": str(e)})
 
     try:
-        data["link"]= driver.current_url
+        data["price"] = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH,
+                                                                                       '//*[@id="main"]/div[1]/div/div[2]/section/div/div/div[1]/div[2]/div/div/div/div/div[2]/p[2]'))).text
+        write_log({"action": "get_price", "status": "success", "price": data["price"]})
+    except Exception as e:
+        write_log({"action": "get_price", "status": "faild", "message": str(e)})
+
+    try:
+        data["link"] = driver.current_url
         write_log({"action": "get_link", "status": "success", "price": data["link"]})
     except Exception as e:
         write_log({"action": "get_link", "status": "faild", "message": str(e)})
 
-
     try:
 
-        #phone_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable(
-            #(By.XPATH, "//button[contains(@class, 'main-button') and contains(text(), 'شماره تماس')]")))
-        
-        #phone_button.click()
-        #time.sleep(2)
-        #write_log({"action": "click_phone_button", "status": "success", })
+        # phone_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable(
+        # (By.XPATH, "//button[contains(@class, 'main-button') and contains(text(), 'شماره تماس')]")))
 
-        #phone_number = WebDriverWait(driver, 10).until(
-            #EC.presence_of_element_located((By.XPATH, "//a[@class='phone-number']/p")))
+        # phone_button.click()
+        # time.sleep(2)
+        # write_log({"action": "click_phone_button", "status": "success", })
+
+        # phone_number = WebDriverWait(driver, 10).until(
+        # EC.presence_of_element_located((By.XPATH, "//a[@class='phone-number']/p")))
         data["phone"] = "090000000000"
-                #data["phone"] = phone_number.text
+        # data["phone"] = phone_number.text
 
-        #time.sleep(0.5)
-        #write_log({"action": "get_phone_number", "status": "success", "phone_number": data["phone"]})
+        # time.sleep(0.5)
+        # write_log({"action": "get_phone_number", "status": "success", "phone_number": data["phone"]})
     except:
         write_log({"action": "click_phone_button", "status": "fail", "message": "cant click phone_button"})
 
@@ -425,7 +425,6 @@ def scrape_single_product(driver):
         except Exception as e:
             write_log({"action": "send_message_text", "status": "success"})
 
-       
     print("Sending product:", data["product_name"])
 
 

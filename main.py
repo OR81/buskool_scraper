@@ -455,12 +455,12 @@ def save_processed():
 
 if __name__ == "__main__":
     try:
-        driver = start_browser(headless=False)
-        process_all_products(driver)
+        Driver = start_browser(headless=False)
+        process_all_products(Driver)
     except Exception as e:
         print("Error:", e)
     finally:
         try:
-            driver.quit()
+            Driver.quit()
         except:
             pass

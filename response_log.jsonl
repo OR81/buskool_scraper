@@ -1,0 +1,29 @@
+{"action": "check_forbidden", "status": "success", "url": "https://www.buskool.com/", "timestamp": "2025-12-02 13:07:33"}
+{"action": "load_cookies", "status": "success", "added": 7, "failed": 0, "timestamp": "2025-12-02 13:07:33"}
+{"action": "start_browser", "status": "success", "timestamp": "2025-12-02 13:07:33"}
+{"action": "check_forbidden", "status": "success", "url": "https://www.buskool.com/", "timestamp": "2025-12-02 13:09:20"}
+{"action": "load_cookies", "status": "success", "added": 7, "failed": 0, "timestamp": "2025-12-02 13:09:20"}
+{"action": "start_browser", "status": "success", "timestamp": "2025-12-02 13:09:20"}
+{"action": "click_new_product_button", "status": "success", "timestamp": "2025-12-02 13:09:27"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1671008611729-827910028-E2dJMcCAhLYzNik3GiFA7n5EGmntSs37V6hnmt2P.jpeg", "timestamp": "2025-12-02 13:09:32"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1671008611729-827910028-E2dJMcCAhLYzNik3GiFA7n5EGmntSs37V6hnmt2P.jpeg", "timestamp": "2025-12-02 13:09:32"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1755271048266-586334428-ZVn3ut5FqZo4ibfWZu9qLC777j8qKLOXWpxkHHoE.jpeg", "timestamp": "2025-12-02 13:09:33"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1755271048266-586334428-ZVn3ut5FqZo4ibfWZu9qLC777j8qKLOXWpxkHHoE.jpeg", "timestamp": "2025-12-02 13:09:33"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/app-1668856858267-1000763635-NGCArAJKxUvDRQjbPiatwcgyMHXEMiJdxJoJsVZkRsHowUqxWA82Ch1q5NIppxNGp-512x512.jpeg", "timestamp": "2025-12-02 13:09:33"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/app-1668856858267-1000763635-NGCArAJKxUvDRQjbPiatwcgyMHXEMiJdxJoJsVZkRsHowUqxWA82Ch1q5NIppxNGp-512x512.jpeg", "timestamp": "2025-12-02 13:09:33"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1736061962555-127817608-QMOEOPikZtsntfZxjYO9wEj0x8Dhy8GmD2NFsnwO.jpeg", "timestamp": "2025-12-02 13:09:34"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1736061962555-127817608-QMOEOPikZtsntfZxjYO9wEj0x8Dhy8GmD2NFsnwO.jpeg", "timestamp": "2025-12-02 13:09:34"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1738346756805-173370161-4OMD8vvJok3reZC6jYAqgNmhRbBbXoYFQ6BM8iup.jpeg", "timestamp": "2025-12-02 13:09:34"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1738346756805-173370161-4OMD8vvJok3reZC6jYAqgNmhRbBbXoYFQ6BM8iup.jpeg", "timestamp": "2025-12-02 13:09:34"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1741009230018-490135061-xX5r7CvRrjSwWIpWh6s087LQB7eJPxaIVhQXhyvO.jpeg", "timestamp": "2025-12-02 13:09:35"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1741009230018-490135061-xX5r7CvRrjSwWIpWh6s087LQB7eJPxaIVhQXhyvO.jpeg", "timestamp": "2025-12-02 13:09:35"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1763826993341-846874771-fXOGpbc8cyHYGMdj8XjXQd4Su8GMOgNevZEJhVDF.jpeg", "timestamp": "2025-12-02 13:09:35"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1763826993341-846874771-fXOGpbc8cyHYGMdj8XjXQd4Su8GMOgNevZEJhVDF.jpeg", "timestamp": "2025-12-02 13:09:35"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1718823160711-347568006-NlmGhzGgdNO3xoUL7aDBepsrWkB5feFHZxHMtbYw.jpeg", "timestamp": "2025-12-02 13:09:36"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1718823160711-347568006-NlmGhzGgdNO3xoUL7aDBepsrWkB5feFHZxHMtbYw.jpeg", "timestamp": "2025-12-02 13:09:36"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1698566535480-998732721-0rwgUerGLVc9sAzcB48nURFAL23h5bZ7JMVUZ7hs.jpeg", "timestamp": "2025-12-02 13:09:36"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1698566535480-998732721-0rwgUerGLVc9sAzcB48nURFAL23h5bZ7JMVUZ7hs.jpeg", "timestamp": "2025-12-02 13:09:36"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1758968763131-102021785-SXdMDMKLvkfaSx7dBVlmKaDfqzKLYsT4Xpo5EoFg.jpeg", "timestamp": "2025-12-02 13:09:37"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1758968763131-102021785-SXdMDMKLvkfaSx7dBVlmKaDfqzKLYsT4Xpo5EoFg.jpeg", "timestamp": "2025-12-02 13:09:37"}
+{"image": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1761364961378-578406585-ywf34KnyLediYYQUzZXWfHep3vROMcshLSLtbroK.jpeg", "timestamp": "2025-12-02 13:09:38"}
+{"action": "skip_duplicate", "status": "skipped", "product_name": "https://product-thumbnails.s3.ir-thr-at1.arvanstorage.com/web-1761364961378-578406585-ywf34KnyLediYYQUzZXWfHep3vROMcshLSLtbroK.jpeg", "timestamp": "2025-12-02 13:09:38"}

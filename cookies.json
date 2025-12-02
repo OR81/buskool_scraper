@@ -1,0 +1,65 @@
+[
+    {
+        "name": "_pk_id.2.d78f",
+        "value": "05853e080e6702e9.1760796834.",
+        "domain": "www.buskool.com",
+        "path": "/",
+        "expires": "2026-11-15T14:13:54.000Z",
+        "secure": false,
+        "httpOnly": false
+    },
+    {
+        "name": "_pk_ref.2.d78f",
+        "value": "%5B%22%22%2C%22%22%2C1764446404%2C%22https%3A%2F%2Fwww.google.com%2F%22%5D",
+        "domain": "www.buskool.com",
+        "path": "/",
+        "expires": "2026-05-31T08:00:04.000Z",
+        "secure": false,
+        "httpOnly": false
+    },
+    {
+        "name": "_pk_ses.2.d78f",
+        "value": "1",
+        "domain": "www.buskool.com",
+        "path": "/",
+        "expires": "2025-11-29T20:35:30.000Z",
+        "secure": false,
+        "httpOnly": false
+    },
+    {
+        "name": "laravel_session",
+        "value": "rhmCfnOmuX3icFQA6TN0Xg8wnEN6X5kdcjLgfwed",
+        "domain": "www.buskool.com",
+        "path": "/",
+        "expires": "2025-11-29T22:05:39.018Z",
+        "secure": true,
+        "httpOnly": false
+    },
+    {
+        "name": "user_password",
+        "value": "eyJpdiI6InBFck9SRXBrajIzSW0yVzBTem9MY0E9PSIsInZhbHVlIjoiaG1maFZzaGNzdVNWalpiMzZIWkhQek5kbkQ4Mmk2cHpXVXg4YXlZeno3cWV6NkFDemEwNGFxWWJSaUt6N2FrNjBxd3FHY3BzUGs0cTYwSDFTQWx3UU9Xd3Z3MmV2RFIyWEEwOUU5YmZVZVhVcFdhaEVmNkFxZ3FGV2ZkRm5pVnYiLCJtYWMiOiJkMWM0ZWNmNWQ5NWNhMjQ2ZDU2MDczMGIzNWI0ZjU0ZmMwYTJmYmQxODU4NWYwZTJkN2UzYzA3Y2ViNWYyOWJlIn0%3D",
+        "domain": "www.buskool.com",
+        "path": "/",
+        "expires": "2026-01-01T01:25:28.722Z",
+        "secure": true,
+        "httpOnly": false
+    },
+    {
+        "name": "user_phone",
+        "value": "eyJpdiI6IkU2L2dsWDE2ZG5VVFBqZWNvYkFhMnc9PSIsInZhbHVlIjoicjRCZk8yZjBhcE9OZDE3NUxJU3dzR3QrQS9vNmFPUTNJSks1Q3VuS1RCVm5aMmYxTjhlQjFNQ3cvRFZOWlhSVlZwTE0xVGtndlM2czhLWEJaQVdCdFE9PSIsIm1hYyI6ImQ2MTZjOTdiMmYzODE1ZTk0OTFmZjBmZjVhYmQ2ZjVmZWE2MTdlNzVlYjVmZjc5MGJhMTFhNGMyYTE2N2Q4NTcifQ%3D%3D",
+        "domain": "www.buskool.com",
+        "path": "/",
+        "expires": "2026-01-01T01:25:28.722Z",
+        "secure": true,
+        "httpOnly": false
+    },
+    {
+        "name": "userGuideData",
+        "value": "{\"userSelected\":[367402,1505683,1422944]}",
+        "domain": "www.buskool.com",
+        "path": "/",
+        "expires": "2026-12-13T09:10:50.958Z",
+        "secure": false,
+        "httpOnly": false
+    }
+]
